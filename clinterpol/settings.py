@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'clinterpol.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 MODE=config("MODE", default="dev")
-SECRET_KEY='django-insecure-ucy#e*7@_@i^#rq0o&hg9d7qwa&4&6^d1(ra(#hw&fn+@2l*j_'
+SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 # development
 if config('MODE')=="dev":

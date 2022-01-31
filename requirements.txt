@@ -1,12 +1,14 @@
 asgiref==3.5.0
+asn1crypto==1.4.0
 beautifulsoup4==4.10.0
 dj-database-url==0.5.0
 Django==3.2.10
 django-bootstrap4==21.2
 django-on-heroku==1.1.2
-psycopg2-binary==2.9.3
+pg8000==1.23.0
 python-decouple==3.5
 pytz==2021.3
+scramp==1.4.1
 soupsieve==2.3.1
 sqlparse==0.4.2
 whitenoise==5.3.0
