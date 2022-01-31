@@ -14,7 +14,6 @@ import os
 from pathlib import Path
 
 import dj_database_url
-import django_on_heroku
 from decouple import Csv, config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -169,4 +168,3 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Configure Django App for Heroku.
-django_on_heroku.settings(locals())

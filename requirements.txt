@@ -4,7 +4,6 @@ beautifulsoup4==4.10.0
 dj-database-url==0.5.0
 Django==3.2.10
 django-bootstrap4==21.2
-django-on-heroku==1.1.2
 pg8000==1.23.0
 python-decouple==3.5
 pytz==2021.3
