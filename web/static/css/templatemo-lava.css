@@ -224,6 +224,7 @@ a.main-button-slider {
     border-radius: 25px;
     padding: 15px 25px;
     background-color: #0e27b6;
+    margin-top: 10px;
     text-transform: uppercase;
     color: #fff;
     font-weight: 600;
@@ -235,7 +236,8 @@ a.main-button-slider {
 }
 
 a.main-button-slider:hover {
-    background-color: #0e27b6;
+    background-color: #cc2424;
+    color: black;
 }
 
 a.main-button {
@@ -732,7 +734,7 @@ welcome
     width: 100%;
     height: 100vh;
     min-height: 793px;
-    background-image: url(../images/Photos/p1.jpg);
+    /* background-image: url(../images/Photos/p1.jpg); */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right top;
@@ -741,7 +743,6 @@ welcome
 .welcome-area .header-text .left-text {
     position: relative;
     align-self: center;
-    margin-top: 35%;
     transform: perspective(1px) translateY(-30%) !important;
 }
 
