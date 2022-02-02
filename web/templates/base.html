@@ -8,7 +8,6 @@
     {% else %}
     <title>Clinterpol </title>
     {% endif %} {% block styles %} {% bootstrap_css %}
-    <link rel="stylesheet" href="{%static 'css/style.css'%}">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
     <!-- Additional CSS Files -->
@@ -18,7 +17,11 @@
 
     <link rel="stylesheet" href="{%static 'css/templatemo-lava.css'%}">
 
-    <link rel="stylesheet" href="{%static 'css/owl-carousel.css'%}"> {% endblock %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <link rel="stylesheet" href="{%static 'css/owl-carousel.css'%}">
+
+    <link rel="stylesheet" href="{%static 'css/style.css'%}"> {% endblock %}
 
 </head>
 
@@ -28,7 +31,10 @@
 
     <!-- jQuery -->
     <script src="{%static 'js/jquery-2.1.0.min.js'%}"></script>
-
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <!-- Bootstrap -->
     <script src="{%static 'js/popper.js'%}"></script>
     <script src="{%static 'js/bootstrap.min.js'%}"></script>
@@ -41,7 +47,10 @@
     <script src="{%static 'js/imgfix.min.js'%}"></script>
 
     <!-- Global Init -->
+
     <script src="{%static 'js/custom.js'%}"></script>
+
+
     {% bootstrap_javascript %} {% endblock %}
 </body>
 
