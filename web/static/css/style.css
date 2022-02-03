@@ -768,6 +768,7 @@ pre code {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
+    font-size: 12px;
 }
 
 .order-first {
@@ -991,6 +992,7 @@ pre code {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
+        font-size: 12px;
     }
     .order-sm-first {
         -webkit-box-ordinal-group: 0;
