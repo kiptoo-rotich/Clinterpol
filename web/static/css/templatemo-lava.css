@@ -174,9 +174,9 @@ ul {
 }
 
 p {
-    font-size: 15px;
+    font-size: 22px;
     line-height: 25px;
-    color: #888;
+    color: black;
 }
 
 
@@ -861,15 +861,16 @@ about
 .features-item h4 {
     font-weight: 600;
     margin-top: 0px;
-    font-size: 28px;
+    font-size: 30px;
     color: #1e1e1e;
     margin-bottom: 25px;
 }
 
 .features-item p {
     margin-top: 0px;
-    font-size: 18px;
+    font-size: 22px;
     color: #1e1e1e;
+    font-weight: 500;
 }
 
 .features-item .main-button {
@@ -923,7 +924,7 @@ promotion
 }
 
 #promotion .right-text h4 {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 600;
     color: #1e1e1e;
     margin-bottom: 15px;
@@ -931,8 +932,9 @@ promotion
 }
 
 #promotion .left-text p {
-    font-size: 18px;
+    font-size: 22px;
     color: #1e1e1e;
+    font-weight: 400;
 }
 
 #promotion>div>div>div>ul>li>.text>h2 {
@@ -942,6 +944,7 @@ promotion
 
 #promotion>div>div>div>ul>li>.text>p {
     font-size: 18px;
+    font-weight: 500;
 }
 
 
