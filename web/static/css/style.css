@@ -11032,12 +11032,18 @@ h5,
 }
 
 .owl-carousel.home-slider .slider-item .slider-text h1 {
-    font-size: 4vw;
+    font-size: 5vw;
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
     line-height: 1;
     margin-bottom: 5px;
+}
+
+.owl-carousel.home-slider .slider-item .slider-text h5 {
+    font-size: 26px;
+    color: #fff;
+    line-height: 1;
 }
 
 @media (max-width: 991.98px) {
