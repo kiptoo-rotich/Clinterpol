@@ -859,10 +859,17 @@ about
 }
 
 .features-item h4 {
+    font-weight: 600;
     margin-top: 0px;
-    font-size: 22px;
+    font-size: 28px;
     color: #1e1e1e;
     margin-bottom: 25px;
+}
+
+.features-item p {
+    margin-top: 0px;
+    font-size: 18px;
+    color: #1e1e1e;
 }
 
 .features-item .main-button {
@@ -916,10 +923,25 @@ promotion
 }
 
 #promotion .right-text h4 {
-    font-size: 22px;
+    font-size: 32px;
+    font-weight: 600;
     color: #1e1e1e;
     margin-bottom: 15px;
     margin-top: 3px;
+}
+
+#promotion .left-text p {
+    font-size: 18px;
+    color: #1e1e1e;
+}
+
+#promotion>div>div>div>ul>li>.text>h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#promotion>div>div>div>ul>li>.text>p {
+    font-size: 18px;
 }
 
 
