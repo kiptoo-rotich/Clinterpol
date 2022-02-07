@@ -490,10 +490,16 @@ header
             transition: all 0.3s ease 0s;
         }
         
+        #header1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
         .header-area .main-nav .nav {
             float: left;
-            margin-top: 27px;
-            margin-left: 15%;
+            margin-left: 10%;
             margin-right: 0px;
             background-color: #fff;
             padding: 0px 20px;
@@ -991,6 +997,11 @@ about
         .features-item .main-button {
             margin-top: 24px;
             display: inline-block;
+        }
+        
+        .features-icon>p {
+            text-align: left;
+            line-height: 20px;
         }
         /*
 ---------------------------------------------

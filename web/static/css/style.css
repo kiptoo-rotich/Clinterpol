@@ -147,6 +147,51 @@ address {
     height: 160px
 }
 
+.mission_pages {
+    background-image: url(../images/about-us.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+}
+
+.our-service {
+    background-image: url(../images/02-our-service.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+}
+
+.charter_page {
+    background-image: url(../images/Core\ values.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+}
+
+#more_info1,
+#more_info2,
+#more_info3,
+#more_info4,
+#more_info5,
+#more_info6 {
+    display: none;
+}
+
+#read_more1,
+#read_more2,
+#read_more3,
+#read_more4,
+#read_more5,
+#read_more6 {
+    color: blue;
+}
+
 #clients img {
     transition: all 0.4s ease-in-out
 }

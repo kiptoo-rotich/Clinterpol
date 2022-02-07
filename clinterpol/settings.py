@@ -169,3 +169,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Configure Django App for Heroku.
 django_on_heroku.settings(locals())
+
+DEFAULT_FROM_EMAIL = 'kiptoorotiche@gmail.com'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
