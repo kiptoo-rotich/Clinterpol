@@ -1,39 +1,62 @@
-{% load bootstrap4 %}{%load static%} {%block content%}
-<!-- ***** Header Area Start ***** -->
-<header class="header-area header-sticky" style="background-color: white;">
-    <div class="row" id="header1">
-        <!-- ***** Logo Start ***** -->
-        <a href="" class="logo">
-            <img src="{%static '../../../static/images/Photos/logo.jpg" alt="Logo" height="50px" width="50px">
-        </a>
-        <h3>Clinterpol security and forensics consulting limited.</h3>
-        <a href="" class="logo mr-5">
-            <img src="{%static '../../../static/images/Coat_of_arms_of_Kenya_(Official).svg" alt="Logo" height="50px" width="50px">
-        </a>
-    </div>
-    <div class="row" style="margin-top: -2%;">
-        <div class="col-12">
-            <nav class="main-nav">
+<!DOCTYPE html>
+<html lang="en">
 
-                <!-- ***** Logo End ***** -->
-                <!-- ***** Menu Start ***** -->
-                <ul class="nav">
-                    <li class="scroll-to-section"><a href="{%url 'Home'%}" class="menu-item">Home</a></li>
-                    <li class="scroll-to-section"><a href="{%url 'About'%}" class="menu-item">About Us</a></li>
-                    <li class="scroll-to-section"><a href="{%url 'Services'%}" class="menu-item">Our Services</a></li>
-                    <li class="scroll-to-section"><a href="{%url 'Charter'%}" class="menu-item">Our Services Charter</a></li>
-                    <li class="scroll-to-section"><a href="{%url 'Clients'%}" class="menu-item">Our Clients</a></li>
-                    <li class="scroll-to-section"><a href="{%url 'Partners'%}" class="menu-item">Our Membership/Partners</a></li>
-                    <li class="scroll-to-section"><a href="{%url 'Gallery'%}" class="menu-item">Media</a></li>
-                    <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Inquire Now</a></li>
-                </ul>
-                <a class='menu-trigger'>
-                    <span>Menu</span>
-                </a>
-                <!-- ***** Menu End ***** -->
-            </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/templatemo-lava.css">
+    <title>Navbar</title>
+</head>
+
+<body>
+
+    {% load bootstrap4 %}{%load static%} {%block content%}
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky" style="background-color: white;">
+        <div class="row" id="header1">
+            <div class="col-2">
+                <!-- ***** Logo Start ***** -->
+
+                <img src="{%static '../../../static/images/Photos/logo.jpg" alt="Logo" height="50px" width="50px">
+
+            </div>
+            <div class="col-8 text-center">
+                <h3 id="header_title">Clinterpol security and forensics consulting limited.</h3>
+            </div>
+
+            <div class="col-2">
+                <img src="{%static '../../../static/images/Coat_of_arms_of_Kenya_(Official).svg" alt="Logo" height="50px" width="50px">
+
+            </div>
         </div>
-    </div>
-</header>
-<!-- ***** Header Area End ***** -->
-{%endblock%}
+        <div class="row" style="background-color: darkgreen;">
+            <div class="col-12">
+                <nav class="main-nav">
+
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li class="scroll-to-section"><a href="{%url 'Home'%}" class="menu-item">Home</a></li>
+                        <li class="scroll-to-section"><a href="{%url 'About'%}" class="menu-item">About Us</a></li>
+                        <li class="scroll-to-section"><a href="{%url 'Services'%}" class="menu-item">Our Services</a></li>
+                        <li class="scroll-to-section"><a href="{%url 'Charter'%}" class="menu-item">Our Services Charter</a></li>
+                        <li class="scroll-to-section"><a href="{%url 'Clients'%}" class="menu-item">Our Clients</a></li>
+                        <li class="scroll-to-section"><a href="{%url 'Partners'%}" class="menu-item">Our Membership/Partners</a></li>
+                        <li class="scroll-to-section"><a href="{%url 'Gallery'%}" class="menu-item">Media</a></li>
+                        <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Inquire Now</a></li>
+                    </ul>
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    {%endblock%}
+
+</body>
+
+</html>

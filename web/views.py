@@ -29,6 +29,8 @@ def clients(request):
 def our_service(request):
     return render(request,"main/our_service.html")
 
+def background_check(request):
+    return render(request,"main/background_check.html")
 
 def our_partners(request):
     return render(request,"main/our_partners.html")
