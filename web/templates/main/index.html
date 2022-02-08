@@ -172,26 +172,35 @@
                 <img src="../../static/images/Photos/1T6A7293.jpg" class="rounded img-fluid d-block mx-auto" alt="App">
             </div>
             <div class="right-text offset-lg-1 col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">
-                <ul>
-                    <li data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                        <img src="../../static/images/about-icon-01.png" alt="">
-                        <div class="text">
-                            <h4>Prevention is Better than Cure, Information and Knowledge is Power</h4>
-                            <p><b>CLINTERPOL</b> was incorporated in 2011, our approach to the problem of crime and insecurity are anchored on two pillars: Prevention is better than cure and Information and knowledge is power. We believe that sustainable
-                                management of insecurity, crime and conflict should be intelligence led. Failure by institutions and individuals to take preventive and proactive steps to avoid being victims of crime and insecurity, ensures that a lot
-                                of resources and time are used to react majorly through lengthy investigations and litigations, some taking as long as over a decade. This is not good for business as it slows progress and development.</p>
-                        </div>
-                    </li>
-                    <li data-scroll-reveal="enter right move 30px over 0.6s after 0.5s">
-                        <img src="../../static/images/about-icon-02.png" alt="">
-                        <div class="text">
-                            <h4>Intelligence – Led Decision Making</h4>
-                            <p>CLINTERPOL services majorly seeks to cushion institutions from falling prey to the insidious act of crime and insecurity such as fraud and theft by acting proactively with a preventive mindset, before their occurrence and not
-                                post facto. We are the gateway to sources of knowledge and information critical and instrumental for any institution that intends to rely on intelligence-led, timely, accurate and relevant information and knowledge to arrive
-                                at sustainable, development and growth conscious corporate decisions. Reactive, firefighting, responses long after the fact is tedious, litigation fraught, expensive, time consuming and reputation soiling.</p>
-                        </div>
-                    </li>
-                </ul>
+                <h3 class="text-center">Upcoming events</h3>
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">Event</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Venue</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr class="mt-5">
+                <h3 class="text-center">Register with us today</h3>
+                <form action="" method="POST" style="width:100%" enctype='multipart/form-data'>
+                    {% csrf_token %} {% bootstrap_form form %}
+                    <div class="form-group">
+                        <center><input type="submit" class="btn btn-primary btn-lg" value="Pay Now"></center>
+                    </div>
+                    <input type="hidden" name="next" value="{{next}}">
+                </form>
             </div>
         </div>
     </div>

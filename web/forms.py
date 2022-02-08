@@ -1,6 +1,7 @@
 from django import forms
 from django.core.validators import RegexValidator
 from .models import ContactUs
+from .models import MpesaPayment
 
 def My_TextField_Validator(self):
     return RegexValidator(r'^[-a-zA-Z0-9. ]+$',
@@ -41,3 +42,25 @@ class ContactForm(forms.ModelForm):
     class Meta:
         model=ContactUs
         fields='__all__'
+
+class Payment_Form(forms.ModelForm):   
+    phone_number = forms.CharField(required=True,
+                           help_text='', label='',
+                           validators=[My_TextField_Validator],
+                           widget=forms.TextInput(attrs={'class': 'form-control', 
+                           'placeholder': 'Phone number'}))   
+
+    amount = forms.CharField(required=True,
+                           help_text='', label='',
+                           validators=[My_TextField_Validator],
+                           widget=forms.TextInput(attrs={'class': 'form-control', 
+                           'placeholder': 'Amount'})) 
+
+    Payment_reason = forms.CharField(required=True,
+                           help_text='', label='',
+                           validators=[My_TextField_Validator],
+                           widget=forms.Textarea(attrs={'class': 'form-control', 
+                           'placeholder': 'This payments is for ...'})) 
+    class Meta:
+        model=MpesaPayment
+        fields=['phone_number','amount','Payment_reason']

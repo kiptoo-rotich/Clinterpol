@@ -14,4 +14,5 @@ urlpatterns=[
     path('Gallery',views.gallery,name='Gallery'),
     path('Service Charter',views.service_charter,name='Charter'),
     path('success/', successView, name='success'),
+    path('access/token', views.getAccessToken, name='get_mpesa_access_token'),
     ]

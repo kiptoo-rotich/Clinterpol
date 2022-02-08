@@ -327,9 +327,9 @@ global styles
             }
             #header_title {
                 font-size: 14px;
-                color: blue;
+                text-transform: uppercase;
                 letter-spacing: 0px;
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             }
             #header1 {
                 display: block;
@@ -882,6 +882,12 @@ header
 welcome
 --------------------------------------------- 
 */
+        
+        #header_title {
+            text-transform: uppercase;
+            color: blue;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
         
         .welcome-area {
             width: 100%;
