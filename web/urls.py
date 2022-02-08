@@ -12,6 +12,7 @@ urlpatterns=[
     path('Our_partners',views.our_partners,name='Partners'),
     path('background_check',views.background_check,name='background_check'),
     path('Gallery',views.gallery,name='Gallery'),
+    path('Events',views.events,name='Events'),
     path('Service Charter',views.service_charter,name='Charter'),
     path('success/', successView, name='success'),
     path('access/token', views.getAccessToken, name='get_mpesa_access_token'),

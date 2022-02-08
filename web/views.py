@@ -14,6 +14,16 @@ from .mpesa_credentials import LipanaMpesaPpassword, MpesaAccessToken
 
 # Create your views here.
 def home(request):
+    
+    return render(request,"main/index.html")
+
+def about(request):
+    return render(request,"main/about_us.html")
+
+def clients(request):
+    return render(request,"main/our_clients.html")
+    
+def events(request):
     if request.method=="POST":
         transaction_number=request.POST.get('phone_number')
         cell= str(254)+str(int(transaction_number))
@@ -47,13 +57,7 @@ def home(request):
             return HttpResponse(f'Kindly check your phone {remiting_number} and enter mpesa pin to succesfully pay fare')
     else:
         form= Payment_Form()
-    return render(request,"main/index.html",{'form':form})
-
-def about(request):
-    return render(request,"main/about_us.html")
-
-def clients(request):
-    return render(request,"main/our_clients.html")
+    return render(request,"main/events.html",{'form':form})
 
 
 def our_service(request):
