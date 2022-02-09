@@ -300,9 +300,9 @@ global styles
                 }
                 .features-item p {
                     margin-top: 0px;
-                    font-size: 22px;
+                    font-size: 13px;
                     color: #1e1e1e;
-                    font-weight: 500;
+                    font-weight: 400;
                 }
                 .features-item .main-button {
                     margin-top: 35px;
@@ -915,6 +915,10 @@ welcome
                 text-transform: uppercase;
                 color: blue;
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            
+            #gallery>div>img {
+                margin: 3%;
             }
             
             .welcome-area {
