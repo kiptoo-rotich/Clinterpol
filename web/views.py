@@ -14,7 +14,6 @@ from .mpesa_credentials import LipanaMpesaPpassword, MpesaAccessToken
 
 # Create your views here.
 def home(request):
-    
     return render(request,"main/index.html")
 
 def about(request):
@@ -74,6 +73,26 @@ def service_charter(request):
 
 def gallery(request):
     return render(request,"main/gallery.html")
+
+def investigations(request):
+    return render(request,"main/investigations.html")
+
+def corporate(request):
+    return render(request,"main/corporate.html")
+
+def training(request):
+    return render(request,"main/training.html")
+
+def contact_us(request):
+    form=ContactForm()
+    return render(request,"main/contact_us.html",{'form':form})
+
+
+def security(request):
+    return render(request,"main/security.html")
+
+def international_security(request):
+    return render(request,"main/international_security.html")
 
 def successView(request):
     return HttpResponse('Success! Thank you for your message.')

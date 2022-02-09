@@ -1,0 +1,42 @@
+{%extends 'base.html'%}{% load bootstrap4 %}{%load static%} {%block content%}
+<div class="container" style="margin-top: 15%;">
+    <h2 class="text-center">Contact us today.</h2>
+    <div class="row">
+        <div class="col-5">
+            <img src="../../static/images/Photos/MANAGING DIRECTOR WITH NATIONAL CHAIRMAN OF KENYA NATIONAL CHAMBER OF COMMERCE AND INDUSTRY.jpg" alt="" width="100%">
+        </div>
+        <div class="col-7">
+            <div class="contact-form">
+                <form id="contact " action=" " method="post">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 ">
+                            {{form.First_name}}
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 ">
+                            {{form.Last_name}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 ">
+                            {{form.Phone_number}}
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 ">
+                            {{form.Your_Email_address}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 ">
+                            {{form.subject}}{{form.message}}
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Send Message Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock%}
