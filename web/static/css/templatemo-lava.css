@@ -338,6 +338,12 @@ global styles
                 height: 50px;
                 width: auto;
             }
+            #slider1 {
+                background-image: url(../../static/images/Clinterpol.jpg);
+            }
+            .home-slider {
+                margin-top: 13%;
+            }
         }
         
         @media (max-width: 991px) {
