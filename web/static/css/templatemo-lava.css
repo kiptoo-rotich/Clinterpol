@@ -344,6 +344,13 @@ global styles
                 .home-slider {
                     margin-top: 13%;
                 }
+                .ml10 {
+                    position: relative;
+                    font-weight: 700;
+                    font-size: 2em;
+                    color: #0e27b6;
+                    margin-top: 15%;
+                }
             }
             
             @media (max-width: 991px) {
@@ -1128,14 +1135,6 @@ promotion
             
             #promotion>div>div>div>ul>li>.text>p {
                 font-size: 14px;
-            }
-            
-            .ml10 {
-                position: relative;
-                font-weight: 700;
-                font-size: 4em;
-                color: #0e27b6;
-                margin-top: 15%;
             }
             
             .ml10 .text-wrapper {
