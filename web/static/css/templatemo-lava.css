@@ -1137,6 +1137,13 @@ promotion
                 font-size: 14px;
             }
             
+            .ml10 {
+                position: relative;
+                font-weight: 700;
+                color: #0e27b6;
+                margin-top: 15%;
+            }
+            
             .ml10 .text-wrapper {
                 position: relative;
                 display: inline-block;
