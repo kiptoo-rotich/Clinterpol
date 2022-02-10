@@ -339,7 +339,16 @@ global styles
                     width: auto;
                 }
                 #slider1 {
-                    background-image: url(../../static/images/Clinterpol.jpg);
+                    background-image: url(../../static/images/Clinterpol1.jpg);
+                }
+                #slider2 {
+                    background-image: url(../../static/images/Photos/slider3.jpg);
+                }
+                #slider3 {
+                    background-image: url(../../static/images/Photos/slider3.jpg);
+                }
+                #slider4 {
+                    background-image: url(../../static/images/Photos/slider4.jpg);
                 }
                 .home-slider {
                     margin-top: 13%;
@@ -350,6 +359,9 @@ global styles
                     font-size: 2em;
                     color: #0e27b6;
                     margin-top: 15%;
+                }
+                #landing {
+                    padding-top: 2%;
                 }
             }
             
@@ -373,9 +385,6 @@ global styles
                     text-transform: uppercase;
                     letter-spacing: 0px;
                     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                }
-                #slider1 {
-                    background-image: url(../../static/images/Clinterpol.jpg);
                 }
                 .home-slider {
                     margin-top: 13%;
@@ -476,6 +485,38 @@ header
             .logo {
                 margin-top: 1%;
                 margin-left: 5%;
+            }
+            
+            #slider1 {
+                background-image: url(../../static/images/Clinterpol.jpg);
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            
+            #slider2 {
+                background-image: url(../../static/images/Photos/slider21.jpg);
+                -moz-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            
+            #slider3 {
+                background-image: url(../../static/images/Photos/slider3.jpg);
+                -o-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            
+            #slider4 {
+                background-image: url(../../static/images/Photos/slider4.jpg);
+                background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
             }
             
             .background-header {
