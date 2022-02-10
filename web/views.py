@@ -48,7 +48,7 @@ def events(request):
                 "PartyB": LipanaMpesaPpassword.Business_short_code,
                 "PhoneNumber": remiting_number, 
                 "CallBackURL": "https://sandbox.safaricom.co.ke/mpesa/",
-                "AccountReference": "Clinterpol Security and Forensic Consulting Limited",
+                "AccountReference": "Clinterpol",
                 "TransactionDesc": "Clinterpol Payments"
             }
 
