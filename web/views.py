@@ -48,12 +48,12 @@ def events(request):
                 "PartyB": LipanaMpesaPpassword.Business_short_code,
                 "PhoneNumber": remiting_number, 
                 "CallBackURL": "https://sandbox.safaricom.co.ke/mpesa/",
-                "AccountReference": "Clinterpol",
-                "TransactionDesc": "Clinterpol Payments"
+                "AccountReference": "Clinterpol Security and Forensic Consulting Limited",
+                "TransactionDesc": "Clinterpol"
             }
 
             response = requests.post(api_url, json=request, headers=headers)
-            return HttpResponse(f'Kindly check your phone {remiting_number} and enter mpesa pin to succesfully pay fare')
+            return HttpResponse(f'Kindly check your phone {remiting_number} and enter mpesa pin to succesfully pay to Clinterpol Security and Forensic Consulting Limited')
     else:
         form= Payment_Form()
     return render(request,"main/events.html",{'form':form})
