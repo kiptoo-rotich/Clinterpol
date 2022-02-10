@@ -1,4 +1,8 @@
 import json
+from math import ceil
+from tkinter.tix import PopupMenu
+
+import pywhatkit
 
 import requests
 from django.core.mail import BadHeaderError, send_mail
@@ -6,12 +10,18 @@ from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.shortcuts import redirect, render
 from django.views.decorators.csrf import csrf_exempt
 from requests.auth import HTTPBasicAuth
+from django.views.decorators.csrf import csrf_exempt
+from twilio.twiml.messaging_response import MessagingResponse
 
 from .forms import ContactForm,Payment_Form
 from .models import MpesaPayment
 from .mpesa_credentials import LipanaMpesaPpassword, MpesaAccessToken
 
-
+from datetime import datetime
+now = datetime.now()
+hour=int(now.strftime("%H"))
+minute=int(now.strftime("%M"))+2
+print(minute)
 # Create your views here.
 def home(request):
     return render(request,"main/index.html")
@@ -152,3 +162,8 @@ def confirmation(request):
         "ResultDesc": "Accepted"
     }
     return JsonResponse(dict(context))
+
+
+def whatsapp(request):
+    pywhatkit.sendwhatmsg('+254721481236', 'Hello. I would like to get your services.',hour, minute)
+    return HttpResponse('Kindly wait. This may that a while as whatsApp is loading...')

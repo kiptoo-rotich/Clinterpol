@@ -578,6 +578,17 @@ header
                 background: transparent;
             }
             
+            #whatsapp {
+                border-radius: 30px;
+                padding: 10px;
+                background-color: green;
+                position: fixed;
+                bottom: 5px;
+                color: white;
+                right: 5px;
+                border: 0px;
+            }
+            
             .more_button {
                 border-radius: 20px;
                 background-color: blue;
