@@ -15,7 +15,6 @@ MouseInfo==0.1.3
 pg8000==1.23.0
 phonenumbers==8.12.43
 Pillow==9.0.1
-pkg_resources==0.0.0
 psycopg2-binary==2.9.3
 PyAutoGUI==0.9.53
 PyGetWindow==0.0.9
