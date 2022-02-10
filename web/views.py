@@ -1,6 +1,5 @@
 import json
 from math import ceil
-from tkinter.tix import PopupMenu
 
 import pywhatkit
 
