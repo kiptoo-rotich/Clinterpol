@@ -1,7 +1,7 @@
 import json
 from math import ceil
 
-# import pywhatkit
+import pywhatkit
 
 import requests
 from django.core.mail import BadHeaderError, send_mail
