@@ -11090,7 +11090,7 @@ h5,
 }
 
 .owl-carousel.home-slider .slider-item .slider-text {
-    height: 650px;
+    height: auto;
     position: relative;
 }
 
