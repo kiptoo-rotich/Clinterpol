@@ -1,5 +1,7 @@
+from distutils.command.config import config
 import json
 from math import ceil
+from decouple import Csv, config
 
 # import pywhatkit as py
 import base64
@@ -32,8 +34,8 @@ def clients(request):
     return render(request,"main/our_clients.html")
 
 class MpesaC2bCredential:
-    consumer_key = 'CHrYGbGBVAqyzI35W84USB9ro8T9m22r'
-    consumer_secret = 'Zv53iyFKaJIS6AJ7'
+    consumer_key = config('consumer_key')
+    consumer_secret = config('consumer_secret')
     api_URL = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials'
 class MpesaAccessToken:
     r = requests.get(MpesaC2bCredential.api_URL,
@@ -43,14 +45,14 @@ class MpesaAccessToken:
 class LipanaMpesaPpassword:
     lipa_time = datetime.now().strftime('%Y%m%d%H%M%S')
     Business_short_code = "174379"
-    passkey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919'
+    passkey = config('passkey')
     data_to_encode = Business_short_code + passkey + lipa_time
     online_password = base64.b64encode(data_to_encode.encode())
     decode_password = online_password.decode('utf-8')
 
 def getAccessToken(request):
-    consumer_key = 'CHrYGbGBVAqyzI35W84USB9ro8T9m22r'
-    consumer_secret = 'Zv53iyFKaJIS6AJ7'
+    consumer_key = config('consumer_key')
+    consumer_secret = config('consumer_secret')
     api_URL = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials'
     r = requests.get(api_URL, auth=HTTPBasicAuth(consumer_key, consumer_secret))
     mpesa_access_token = json.loads(r.text)
