@@ -7,7 +7,7 @@ from decouple import Csv, config
 import base64
 import requests
 from django.core.mail import BadHeaderError, send_mail
-from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import redirect, render
 from django.views.decorators.csrf import csrf_exempt
 from requests.auth import HTTPBasicAuth
@@ -65,7 +65,6 @@ def lipa_na_mpesa_online(request):
             cell= str(254)+str(int(transaction_number))
             remiting_number=int(cell)
             amount=request.POST.get('amount')
-            print("Post")
             form= Payment_Form(request.POST)
             if form.is_valid():
                 access_token = MpesaAccessToken.validated_mpesa_access_token
@@ -85,7 +84,7 @@ def lipa_na_mpesa_online(request):
             "TransactionDesc": "Clinterpol Security and Forensics Consulting Limited"
         }
             response = requests.post(api_url, json=request, headers=headers)
-            return HttpResponse(f'Kindly check your phone {remiting_number} and enter mpesa pin to succesfully pay to Clinterpol Security and Forensic Consulting Limited')
+            return HttpResponse(f'Kindly check your phone {remiting_number} and enter mpesa pin to succesfully pay {amount} to Clinterpol Security and Forensics Consulting Limited')
     else:
         form= Payment_Form()
     return render(request,"main/events.html",{'form':form})
