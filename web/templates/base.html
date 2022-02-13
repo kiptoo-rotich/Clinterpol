@@ -40,7 +40,23 @@
 <body>
     {%include "navbar.html"%} {% block content %} {%endblock%}
 
-    <a href=""><button id="whatsapp"><img src="https://img.icons8.com/color/30/000000/whatsapp--v4.png"/>Direct message</button></a>
+    <a href="{%url 'whatsapp'%}"><button type="button" id="whatsapp" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        <img src="https://img.icons8.com/color/30/000000/whatsapp--v4.png"/>Direct message</button></a>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Payment</h5>
+                    <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+<span aria-hidden="true ">&times;</span>
+</button>
+                </div>
+                <center>
+                    <div class="loader p-5"></div>
+                </center>
+            </div>
+        </div>
+    </div>
     <!-- ***** Footer Start ***** -->
     <footer id="contact-us">
         <div class="container ">
@@ -48,8 +64,34 @@
                 <div class="row ">
                     <!-- ***** Contact Form Start ***** -->
                     <div class="col-lg-6 col-md-12 col-sm-12 ">
-                        <div class="contact-form ">
-
+                        <div class="contact-form">
+                            <form id="contact" action="" method="post">
+                                {% csrf_token %}
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                        {{form.First_name}}
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                        {{form.Last_name}}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                        {{form.Phone_number}}
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                        {{form.Your_Email_address}}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 ">
+                                        {{form.subject}}{{form.message}}
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-primary">Send Message Now</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                     <!-- ***** Contact Form End ***** -->

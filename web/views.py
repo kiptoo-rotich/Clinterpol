@@ -3,7 +3,7 @@ import json
 from math import ceil
 from decouple import Csv, config
 
-# import pywhatkit as py
+import pywhatkit as py
 import base64
 import requests
 from django.core.mail import BadHeaderError, send_mail
@@ -12,7 +12,7 @@ from django.shortcuts import redirect, render
 from django.views.decorators.csrf import csrf_exempt
 from requests.auth import HTTPBasicAuth
 from django.views.decorators.csrf import csrf_exempt
-from twilio.twiml.messaging_response import MessagingResponse
+# from twilio.twiml.messaging_response import MessagingResponse
 
 from .forms import ContactForm,Payment_Form
 from .models import MpesaPayment
@@ -118,6 +118,9 @@ def contact_us(request):
     form=ContactForm()
     return render(request,"main/contact_us.html",{'form':form})
 
+def mybase(request):
+    form=ContactForm()
+    return render(request,"base.html",{'form':form})
 
 def security(request):
     return render(request,"main/security.html")
@@ -128,9 +131,6 @@ def international_security(request):
 def successView(request):
     return HttpResponse('Success! Thank you for your message.')
     
-
-
-
-# def whatsapp(request):
-#     py.sendwhatmsg('+254721481236', 'Hello. I would like to get your services.',hour, minute)
-#     return HttpResponse('Kindly wait. This may that a while as whatsApp is loading...')
+def whatsapp(request):
+    py.sendwhatmsg('+254721481236', 'Hello. I would like to get your services.',hour, minute,30)
+    return HttpResponse('Kindly wait. This may that a while as whatsApp is loading...')

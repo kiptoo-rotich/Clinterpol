@@ -172,3 +172,7 @@ django_on_heroku.settings(locals())
 
 DEFAULT_FROM_EMAIL = 'kiptoorotiche@gmail.com'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+
+TWILIO_ACCOUNT_SID = config('TWILIO_ACCOUNT_SID')
+TWILIO_AUTH_TOKEN = config('TWILIO_AUTH_TOKEN')
