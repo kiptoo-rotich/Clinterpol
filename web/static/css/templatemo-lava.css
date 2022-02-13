@@ -344,18 +344,6 @@ global styles
                     height: 50px;
                     width: auto;
                 }
-                #slider1 {
-                    background-image: url(../../static/images/Clinterpol1.jpg);
-                }
-                #slider2 {
-                    background-image: url(../../static/images/Photos/slider3.jpg);
-                }
-                #slider3 {
-                    background-image: url(../../static/images/Photos/slider3.jpg);
-                }
-                #slider4 {
-                    background-image: url(../../static/images/Photos/slider4.jpg);
-                }
                 .home-slider {
                     margin-top: 13%;
                 }
@@ -499,46 +487,6 @@ header
             .logo {
                 margin-top: 1%;
                 margin-left: 5%;
-            }
-            
-            #slider1 {
-                background-image: url(../../static/images/Clinterpol.jpg);
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                max-width: 100%;
-                height: auto;
-            }
-            
-            #slider2 {
-                background-image: url(../../static/images/Photos/slider21.jpg);
-                -moz-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                max-width: 100%;
-                height: auto;
-            }
-            
-            #slider3 {
-                background-image: url(../../static/images/Photos/slider3.jpg);
-                -o-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                max-width: 100%;
-                height: auto;
-            }
-            
-            #slider4 {
-                background-image: url(../../static/images/Photos/slider4.jpg);
-                background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                max-width: 100%;
-                height: auto;
             }
             
             .background-header {

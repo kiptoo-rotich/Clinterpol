@@ -25,7 +25,8 @@ minute=int(now.strftime("%M"))+2
 print(minute)
 # Create your views here.
 def home(request):
-    return render(request,"main/index.html")
+    form=ContactForm()
+    return render(request,"main/index.html",{'form':form})
 
 def about(request):
     return render(request,"main/about_us.html")
