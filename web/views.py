@@ -3,7 +3,7 @@ import json
 from math import ceil
 from decouple import Csv, config
 
-import pywhatkit as py
+# import pywhatkit as py
 import base64
 import requests
 from django.core.mail import BadHeaderError, send_mail
@@ -131,6 +131,6 @@ def international_security(request):
 def successView(request):
     return HttpResponse('Success! Thank you for your message.')
     
-def whatsapp(request):
-    py.sendwhatmsg('+254721481236', 'Hello. I would like to get your services.',hour, minute,30)
-    return HttpResponse('Kindly wait. This may that a while as whatsApp is loading...')
+# def whatsapp(request):
+#     py.sendwhatmsg('+254721481236', 'Hello. I would like to get your services.',hour, minute,30)
+#     return HttpResponse('Kindly wait. This may that a while as whatsApp is loading...')
